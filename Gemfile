@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://github.com/sinatra/sinatra.git'
 gem 'sinatra', :github => 'sinatra/sinatra'
 
 gem 'sinatra-contrib'
