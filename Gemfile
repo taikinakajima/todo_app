@@ -1,10 +1,10 @@
+source 'https://rubygems.org'
 gem 'sinatra', :github => 'sinatra/sinatra'
 
 gem 'sinatra-contrib'
 gem 'activerecord'
 gem 'sinatra-activerecord' , :require => 'active_support/all'
 gem 'pg'
-gem 'rake'
 gem "activerecord-postgresql-adapter"
 
 group :development do

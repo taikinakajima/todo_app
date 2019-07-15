@@ -1,11 +1,10 @@
-
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/cookies'
 require 'pg'
-require 'rack/flash'
 require 'active_record'
-ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'pg://localhost/development.db')
+require 'rubygems'
+
 
 class Country < ActiveRecord::Base
 end
@@ -13,9 +12,6 @@ end
 enable :sessions
 
 
-configure do
-  use Rack::Flash
-end
 
 client = PG::connect(
   :host => "localhost",
