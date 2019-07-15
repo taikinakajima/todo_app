@@ -4,6 +4,12 @@ require 'sinatra/reloader'
 require 'sinatra/cookies'
 require 'pg'
 require 'rack/flash'
+require 'active_record'
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'pg://localhost/development.db')
+
+class Country < ActiveRecord::Base
+end
+
 enable :sessions
 
 
