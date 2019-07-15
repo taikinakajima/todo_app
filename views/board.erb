@@ -1,0 +1,17 @@
+<body >
+    <div class="mypage">
+         <a href="http://localhost:4567/mypage" class="btn my_page"  style="text-decoration:none;">マイページに戻る</a>
+         </form>
+         <h1>みんなの未完了タスク</h1>
+         <div class="comment">
+         <div class="box26">
+         <span class="box-title">To Do</span>
+         <% @content.each do |content| %>
+        <p> <%=content['name']%>の[To Do]:
+            <%=content['content'] %>
+          投稿日: <%=content['created_at']%>
+          </form></p>
+        <% end %>
+        </div>
+        </div>
+</body>

@@ -1,0 +1,38 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+　 <div class="myname">
+    <h1><%= session[:name] %>さんのTo do</h1>
+    <div class="btn-wrapper">
+     <a href="http://localhost:4567/board" class="btn logout"  style="text-decoration:none;">みんなのTo Do</a>
+     <a href="http://localhost:4567/logout" class="btn contents"  style="text-decoration:none;">ログアウト</a>
+    </div>
+   </div>
+<body >
+    <div class="mypage">
+         <h3>未完了タスク</h3>
+          <h3> <%= @count['count'] %> </h3>
+         <div class="comment">
+         <div class="box26">
+         <span class="box-title">To Do</span>
+         <% @content.each do |content| %>
+        <p> <%=content['content'] %>
+            投稿日: <%=content['created_at']%>
+          <form action="/delete/<%=content['id']%>" method="DELETE"><input type="submit" value="完了">
+          </form></p>
+        <% end %>
+        </div>
+        </div>
+         <div class="content">
+          <form action="/content" method="POST">
+          <label for="content">タスク追加</label>
+          <input type="content" name="content" id="content" /><br>
+          <input type="submit" value="追加">
+         </form>
+         </div>
+    </div>
+</body> 
+ 
+   
