@@ -1,7 +1,11 @@
-GIT
-  remote: git://github.com/sinatra/sinatra.git
-  revision: eee711bce740d38a9a91aa6028688c9a6d74b23b
+GEM
+  remote: https://rubygems.org/
   specs:
+    backports (3.15.0)
+    multi_json (1.13.1)
+    mustermann (1.0.3)
+    pg (1.1.4)
+    rack (2.0.7)
     rack-protection (2.0.5)
       rack
     sinatra (2.0.5)
@@ -15,27 +19,15 @@ GIT
       mustermann (~> 1.0)
       rack-protection (= 2.0.5)
       sinatra (= 2.0.5)
-      tilt (~> 2.0)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    activerecord-postgresql-adapter (0.0.1)
-      pg
-    backports (3.15.0)
-    multi_json (1.13.1)
-    mustermann (1.0.3)
-    pg (1.1.4)
-    rack (2.0.7)
+      tilt (>= 1.3, < 3)
     tilt (2.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-postgresql-adapter
   pg
-  sinatra!
+  sinatra
   sinatra-contrib
 
 BUNDLED WITH
