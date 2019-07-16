@@ -10,8 +10,8 @@ enable :sessions
 client = PG::connect(
   :host => "ec2-23-21-109-177.compute-1.amazonaws.com",
   :user => 'rdohcqyhbqbwsk', :password => 'ac0eaaaba33a3200cabe7fb50e914b3738a97a0630916026bca457c95467a95b',
-  :dbname => "d3mdpe8jhrooag
-  ")
+  :dbname => "d3mdpe8jhrooag"
+  )
 # client = PG::connect(
 #   :host => "localhost",
 #   :user => 'TaikiNakajima', :password => '',
