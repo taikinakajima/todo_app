@@ -2,12 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/cookies'
 require 'pg'
-require 'active_record'
 require 'rubygems'
-
-
-class Country < ActiveRecord::Base
-end
 
 enable :sessions
 
