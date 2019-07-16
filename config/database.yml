@@ -1,2 +1,7 @@
+# adevelopment:
 adapter: pg
-database: db/production.pg
+encoding: unicode
+database: d3mdpe8jhrooag
+pool: 5
+username: rdohcqyhbqbwsk
+password: ac0eaaaba33a3200cabe7fb50e914b3738a97a0630916026bca457c95467a95b
