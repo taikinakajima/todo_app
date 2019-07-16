@@ -30,5 +30,8 @@ DEPENDENCIES
   sinatra (= 2.0.5)
   sinatra-contrib (= 2.0.5)
 
+RUBY VERSION
+   ruby 2.3.7p456
+
 BUNDLED WITH
    2.0.1
