@@ -1,2 +1,4 @@
 adapter: pg
 database: db/production.pg
+default: &default
+  host: localhost
