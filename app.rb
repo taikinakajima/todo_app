@@ -1,13 +1,11 @@
-require 'sinatra'
-require 'sinatra/reloader'
-require 'sinatra/cookies'
-require 'pg'
+
+require 'sqlite3'
 require 'rubygems'
 
-enable :sessions
+# enable :sessions
 
 
-client = PG::connect(
+client = sqlite3::connect(
   :host => "ec2-23-21-109-177.compute-1.amazonaws.com",
   :user => 'rdohcqyhbqbwsk', :password => 'ac0eaaaba33a3200cabe7fb50e914b3738a97a0630916026bca457c95467a95b',
   :dbname => "d3mdpe8jhrooag"

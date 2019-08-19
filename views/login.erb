@@ -35,7 +35,13 @@
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="/login" method="POST">
+                     <% if @error_message %>
+                      <div class="form-error">
+                       <%= @error_message %>
+                      </div>
+                    <% end %>
+                        <%# <form id="login-form" class="form" action="/login" method="POST"> %>
+                        <%= form_tag("/login") do %>
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
                                 <label class="text-info" for="name">Username:</label><br>
@@ -48,7 +54,8 @@
                             <div class="form-group">
                                 <input type="submit" name="submit"  class="btn btn-info btn-md" value="LOGIN">
                             </div>
-                         </form>
+                         <%# </form> %>
+                        <% end %>
                     </div>
                 </div>
             </div>
