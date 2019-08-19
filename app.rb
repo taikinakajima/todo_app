@@ -2,7 +2,7 @@
 require 'sqlite3'
 require 'rubygems'
 
-# enable :sessions
+enable :sessions
 
 
 client = sqlite3::connect(
