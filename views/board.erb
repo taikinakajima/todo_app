@@ -1,17 +1,18 @@
-<body >
-    <div class="mypage">
-         <a href="/mypage" class="btn my_page"  style="text-decoration:none;">マイページに戻る</a>
-         </form>
-         <h1>みんなの未完了タスク</h1>
-         <div class="comment">
-         <div class="box26">
-         <span class="box-title">To Do</span>
-         <% @content.each do |content| %>
+<body>
+  <div class="mypage">
+    <a href="/mypage" class="btn my_page" style="text-decoration:none;">マイページに戻る</a>
+    </form>
+    <h1>みんなの未完了タスク</h1>
+    <div class="comment">
+      <div class="box26">
+        <span class="box-title">To Do</span>
+        <% @content.each do |content| %>
         <p> <%=content['name']%>の[To Do]:
-            <%=content['content'] %>
+          <%=content['content'] %>
           投稿日: <%=content['created_at']%>
-          </form></p>
+          </form>
+        </p>
         <% end %>
-        </div>
-        </div>
+      </div>
+    </div>
 </body>

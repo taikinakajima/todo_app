@@ -66,16 +66,16 @@ post '/login' do
       redirect to('/mypage')
     end
   end
-  
+
   # if params[:name] = name
   #   redirect to('/login')
   # end
-  
+
   # if params[:password] = password
   #   redirect to('/login')
   # end
   redirect to('/login') if session[:id].nil?
-  
+
   redirect to('/login')
 end
 
